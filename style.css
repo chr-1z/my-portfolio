@@ -104,8 +104,8 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4;
-    animation: zoom 10s;
+    opacity: 0.8;
+    animation: zoom 5s;
 }
 
 .banner {
@@ -248,7 +248,6 @@ a {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 6rem);
     row-gap: .5rem;
-
 }
 
 .conhecimento:nth-child(1) {
@@ -267,18 +266,22 @@ a {
 }
 
 .conhecimento:nth-child(4) {
-    grid-column: 11 / 14;
+    grid-column: 13 / 16;
     grid-row: 1 / 3;
 }
 
 .conhecimento:nth-child(5) {
-    grid-column: 12 / 15;
+    grid-column: 14 / 15;
     grid-row: 3 / 5;
 }
 
 .conhecimento:nth-child(6) {
-    grid-column: 11 / 14;
+    grid-column: 13 / 14;
     grid-row: 5 / -1;
+}
+
+.sessao-conhecimentos {
+    background-color: rgb(162, 160, 160);
 }
 
 .sessao-header {
@@ -290,7 +293,7 @@ a {
 .sessao-header h1 {
     font-family: var(--font-primary);
     font-size: 3rem;
-    color: #4b4b4b;
+    color: #000000;
     border-bottom: solid 3px #6a3093;
     margin-bottom: 1.5rem;
 }
@@ -298,12 +301,14 @@ a {
 .conhecimento-header {
     display: flex;
     align-items: center;
-    color: #4b4b4b;
-
+    color: #000000;
+    font-size: 2.5rem;
 }
 
-.conhecimento-header {
-    font-size: 2.5rem;
+
+.conhecimento-header:hover {
+    color: #7e28d5;
+    transition: color 1s;
 }
 
 .conhecimento-header h3 {
@@ -318,7 +323,7 @@ a {
 }
 
 .conhecimentos-img-wrapper {
-    grid-column: 7 / 11;
+    grid-column: 8 / 12;
     grid-row: 2 / 6;
     width: 100%;
 }
