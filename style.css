@@ -2,3 +2,99 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    animation: zoom 10s;
+}
+
+.banner {
+    position: absolute;
+    top: 42%;
+    left: 15%;
+}
+
+.banner h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-family: "Baloo Da 2", serif;
+    font-weight: 300;
+    text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .45);
+    line-height: 4.5rem;
+    margin-bottom: .5rem;
+    animation: moveBanner 1s 0.6 forwards;
+    opacity: 0;
+
+}
+
+.banner p {
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: .2rem .2rem rgba(0, 0, 0, .4);
+    margin-bottom: 5rem;
+    animation: moveBanner 2s 0.5 forwards;
+}
+
+.banner button {
+    font-family: "Muli", serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: moveBanner 2.3s 0.9 forwards;
+    opacity: 0;
+}
+
+.banner button:hover {
+    opacity: 0.8;
+    color: black;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes moveBanner {
+    0% {
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+    100% {
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
