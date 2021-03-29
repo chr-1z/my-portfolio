@@ -349,6 +349,7 @@ a {
 
 .sessao-projetos {
     background-color: #262626;
+    color: black;
 }
 
 .projetos {
@@ -359,6 +360,7 @@ a {
 .card {
     width: 15rem;
     height: 30rem;
+    position: relative;
 }
 
 .card-img-wrapper {
@@ -378,10 +380,12 @@ a {
 
 .card-info {
     position: absolute;
+    opacity: 0;
+    visibility: hidden;
     bottom: 1;
     padding: 2rem;
-    text-align: center;
-    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .4);
+    text-shadow: 0.3 0.2rem 0.3rem rgba(0, 0, 0, .4);
+    transition: all .3s;
 }
 
 .card-info h2 {
@@ -393,6 +397,42 @@ a {
 
 .card-info h3 {
    font-family: var(--font-secundary); 
-   font-weight: 500;
-   color: rgb(0, 0, 0);
+   font-weight: bolder;
+   color: #ff4081;
+   margin-bottom: 1.5rem;
+}
+
+.card-info p {
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.card-info button {
+    width: 8rem;
+    height: 2.5rem;
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB);
+    font-family: var(--font-action);
+    font-size: .5rem;
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-img-wrapper:hover {
+    opacity: .3;
+}
+
+.card-info:hover .card {
+    opacity: .3;
 }
