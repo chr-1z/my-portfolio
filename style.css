@@ -85,7 +85,6 @@
     opacity: 1;
 }
 
-
 header {
     width: 100%;
     height: 100vh;
@@ -323,8 +322,8 @@ a {
 }
 
 .conhecimentos-img-wrapper {
-    grid-column: 8 / 12;
-    grid-row: 2 / 6;
+    grid-column: 7 / 12;
+    grid-row: 1 / 5;
     width: 100%;
 }
 
@@ -376,7 +375,13 @@ a {
     height: 100%;
     opacity: 0.95;
     border-radius: .5rem;
+    transition: opacity .3s;
 }
+
+.card:hover .card-img-wrapper img {
+    opacity: 0.15;
+    
+  }
 
 .card-info {
     position: absolute;
@@ -421,18 +426,11 @@ a {
     border-radius: .5rem;
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+    cursor: pointer;
 }
 
 .card:hover .card-info{
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
-}
-
-.card-img-wrapper:hover {
-    opacity: .3;
-}
-
-.card-info:hover .card {
-    opacity: .3;
 }
