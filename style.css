@@ -13,13 +13,19 @@
 
 
 body {
-    overflow-x: hidden
+    overflow-x: hidden;
+    min-width: 10vw;
 }
 
 :root {
     --font-primary: "Baloo Da 2", serif;
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;
+}
+
+.container {
+    min-width: 320px;
+    width: 100%;
 }
 
 .hamburguer {
@@ -578,8 +584,8 @@ footer{
     line-height: 48px;
     width: 48px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 120px;
+    right: 47px;
     z-index: 100;
     opacity: 0;
     transform: translateY(100px);
