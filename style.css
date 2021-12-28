@@ -191,7 +191,7 @@ header {
     width: 20rem;
     height: 100vh;
     background-color: #fff;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: -20rem;
     transition: all 1.1s;
