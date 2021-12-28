@@ -25,5 +25,9 @@ function scrollToTop() {
   });
 }
 
+function openSideBar() {
+  document.querySelector(".container").classList.toggle("show-menu");
+}
+
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
