@@ -341,7 +341,8 @@ a {
 
 .conhecimentos-img-wrapper img{
     object-fit: cover;
-    width: 100%;
+    width: 60vh;
+    padding-top: 20px;
 }
 
 ::-webkit-scrollbar {
